@@ -1,6 +1,6 @@
 #  Makefile for sstrip
 CC ?= gcc
-CFLAGS += -03 -pipe -w -Wno-error -Ielfrw
+CFLAGS += -g0 -pipe -w -Wno-error -Ielfrw
 
 sstrip: sstrip.c elfrw/libelfrw.a
 	$(CC) $(CFLAGS) -o $@ $^
