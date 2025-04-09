@@ -1,7 +1,7 @@
 #  Makefile for libelfrw.a
 
-CC = gcc
-CFLAGS = -Wall -Wextra -O3
+CC ?= gcc
+CFLAGS += -03 -pipe -w -Wno-error -Ielfrw
 
 LIBOBJS = elfrw.o elfrw_dyn.o elfrw_ehdr.o elfrw_phdr.o elfrw_rel.o \
           elfrw_shdr.o elfrw_sym.o elfrw_ver.o
